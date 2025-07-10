@@ -1,0 +1,90 @@
+/*Mise en page Initiale*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  outline: solid 1px red;
+}
+
+body {
+  overflow-x: hidden;
+  text-align: center;
+}
+/*Style Commun à tous les Affichages*/
+
+body {background-color: gray;
+}
+
+.container {
+  border: solid;
+  border-color: black;
+  background-color: darkgray;
+}
+
+.boxIntro {
+  border: solid;
+  border-color: black;
+  background-color: darkolivegreen;
+}
+
+.boxApp {
+  border: solid;
+  border-color: black;
+  background-color: bisque;
+}
+
+/*Style de Base en Affichage Mobile*/
+
+.container {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  text-align: center;
+}
+
+.boxIntro {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  padding: 2vw;
+}
+
+.boxApp {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  row-gap: 2vw;
+  padding: 2vw;
+}
+
+/*Media Queries pour Ecrans larges/Desktop*/
+
+@media (min-width: 601px) {
+  .container {
+    display: grid;
+    margin: 1vw;
+    text-align: center;
+  }
+
+  .boxIntro {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 1vw;
+  }
+
+  .boxApp {
+    margin: 1vw;
+    padding: 1vw;
+  }
+}
