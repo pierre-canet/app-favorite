@@ -6,17 +6,14 @@
   box-sizing: border-box;
 }
 
-* {
-  outline: solid 1px red;
-}
-
 body {
   overflow-x: hidden;
   text-align: center;
 }
 /*Style Commun à tous les Affichages*/
 
-body {background-color: gray;
+body {
+  background-color: gray;
 }
 
 .container {
